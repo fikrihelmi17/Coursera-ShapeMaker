@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     
     @objc func calculate()
     {
+        view.endEditing(true)
+        
         let alert = UIAlertController(title: "", message: textField.text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
